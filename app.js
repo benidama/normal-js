@@ -6,7 +6,15 @@ calculateCircumference(5);
 
 function timer() {
   const dates = new Date();
-  const my = new Date(24, 12, 1);
-  document.getElementById("tim").innerHTML = dates.toDateString();
+  const my = new Date(2020, 1, 1);
+  const again = new Date("23-11-01");
+  document.getElementById("tim").innerHTML = dates.toDateString() + " " + my;
+  +" " + again;
 }
 timer();
+
+function prom() {
+  const name = prompt("Please, Enter your name.");
+  document.getElementById("prom").innerHTML = name;
+}
+prom();
