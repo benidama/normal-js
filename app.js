@@ -20,7 +20,7 @@ function prom() {
 prom();
 
 function generateNumber() {
-  let getNumber = Math.floor(Math.random() * 10 + 1);
+  let getNumber = Math.floor(Math.random() * 100);
   document.getElementById("radom").innerHTML = getNumber;
 }
 generateNumber();
