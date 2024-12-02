@@ -18,3 +18,9 @@ function prom() {
   document.getElementById("prom").innerHTML = name;
 }
 prom();
+
+function generateNumber() {
+  let getNumber = Math.floor(Math.random() * 10 + 1);
+  document.getElementById("radom").innerHTML = getNumber;
+}
+generateNumber();
