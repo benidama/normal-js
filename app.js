@@ -13,14 +13,21 @@ function timer() {
 }
 timer();
 
-function prom() {
-  const name = prompt("Please, Enter your name.");
-  document.getElementById("prom").innerHTML = name;
-}
-prom();
+// function prom() {
+//   const name = prompt("Please, Enter your name.");
+//   document.getElementById("prom").innerHTML = name;
+// }
+// prom();
 
 function generateNumber() {
   let getNumber = Math.round(Math.random() * 100);
   document.getElementById("radom").innerHTML = getNumber;
 }
 generateNumber();
+
+function getNumber() {
+  const num = 23.88;
+  document.getElementById("nbers").innerHTML = num.toFixed(1);
+  // document.getElementById("nbers").innerHTML = Number.isInteger(num);
+}
+getNumber();
