@@ -20,7 +20,7 @@ timer();
 // prom();
 
 function generateNumber() {
-  let getNumber = Math.round(Math.random() * 100);
+  let getNumber = Math.floor(Math.random() * (75 - 50)) + 50;
   document.getElementById("radom").innerHTML = getNumber;
 }
 generateNumber();
