@@ -27,7 +27,12 @@ generateNumber();
 
 function getNumber() {
   const num = 23.88;
-  document.getElementById("nbers").innerHTML = num.toFixed(1);
+  const str = "45";
+  const fixed = num.toPrecision(2);
+  const number = Number(fixed);
+  const float = parseFloat(str);
+  document.getElementById("float").innerText = float;
+  document.getElementById("nbers").innerHTML = typeof number;
   // document.getElementById("nbers").innerHTML = Number.isInteger(num);
 }
 getNumber();
